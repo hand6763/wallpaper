@@ -1,0 +1,43 @@
+<%= form_with url: addresses_path, model: @address, local: true do |f| %>
+<div class="Form">
+  <div class="Form-Item">
+    <p class="Form-Item-Label">
+      <span class="Form-Item-Label-Required">必須</span>お名前
+    </p>
+    <%= f.text_field :name, class:"Form-Item-Input", placeholder:"例）山田太郎" %>
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+    <%= f.text_field :email, class:"Form-Item-Input", placeholder:"例）example@gmail.com" %>
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>郵便番号</p>
+    <%= f.text_field :postal_code, class:"Form-Item-Input", placeholder:"例）000-0000" %>
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>都道府県</p>
+    <%= f.text_field :prefecture, class:"Form-Item-Input", placeholder:"例）群馬県" %>
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>市区町村</p>
+    <%= f.text_field :municipality, class:"Form-Item-Input", placeholder:"例）◯◯市◯◯町" %>
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>番地</p>
+    <%= f.text_field :address, class:"Form-Item-Input", placeholder:"例）1-1-1" %>
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label"><span class="Form-Item-Label-Any">任意</span>建物名</p>
+    <%= f.text_field :building_name, class:"Form-Item-Input", placeholder:"例）◯◯ビル101" %>
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+    <%= f.text_field :phone_number, class:"Form-Item-Input", placeholder:"例）00000000000" %>
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Any">任意</span>ご要望等</p>
+    <%= f.text_area :request, class:"Form-Item-Textarea", placeholder:"不明点やご要望がございましたら記入ください。" %>
+  </div>
+  <%= f.submit "送信する" ,class:"Form-Btn" %>
+</div>
+<% end %>

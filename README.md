@@ -75,13 +75,15 @@ Twitter,instagramへのリンク機能は現代の流行を考えると実装し
 
 | Column        | Type       | Options           |
 | ------        | ------     | -----------       |
+| name          | string     | null: false       |
 | email         | string     | null: false       |
 | postal_code   | string     | null: false       |
-| prefecture_id | integer    | null: false       |
+| prefecture    | string     | null: false       |
 | municipality  | string     | null: false       |
 | address       | string     | null: false       |
 | building_name | string     |                   |
 | phone_number  | string     | null: false       |
+| request       | text       |                   |
 
 
 ## estimation テーブル
