@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  root to: 'lp#index'
+  root to: 'addresses#index'
 
+  resources :addresses, only: [:index, :new, :create]
   resources :estimations, only: :index
-  resources :addresses, only: [:index, :create]
+  
 end

@@ -1,43 +1,57 @@
-<%= form_with url: addresses_path, model: @address, local: true do |f| %>
-<div class="Form">
-  <div class="Form-Item">
-    <p class="Form-Item-Label">
-      <span class="Form-Item-Label-Required">必須</span>お名前
-    </p>
-    <%= f.text_field :name, class:"Form-Item-Input", placeholder:"例）山田太郎" %>
-  </div>
-  <div class="Form-Item">
-    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-    <%= f.text_field :email, class:"Form-Item-Input", placeholder:"例）example@gmail.com" %>
-  </div>
-  <div class="Form-Item">
-    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>郵便番号</p>
-    <%= f.text_field :postal_code, class:"Form-Item-Input", placeholder:"例）000-0000" %>
-  </div>
-  <div class="Form-Item">
-    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>都道府県</p>
-    <%= f.text_field :prefecture, class:"Form-Item-Input", placeholder:"例）群馬県" %>
-  </div>
-  <div class="Form-Item">
-    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>市区町村</p>
-    <%= f.text_field :municipality, class:"Form-Item-Input", placeholder:"例）◯◯市◯◯町" %>
-  </div>
-  <div class="Form-Item">
-    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>番地</p>
-    <%= f.text_field :address, class:"Form-Item-Input", placeholder:"例）1-1-1" %>
-  </div>
-  <div class="Form-Item">
-    <p class="Form-Item-Label"><span class="Form-Item-Label-Any">任意</span>建物名</p>
-    <%= f.text_field :building_name, class:"Form-Item-Input", placeholder:"例）◯◯ビル101" %>
-  </div>
-  <div class="Form-Item">
-    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
-    <%= f.text_field :phone_number, class:"Form-Item-Input", placeholder:"例）00000000000" %>
-  </div>
-  <div class="Form-Item">
-    <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Any">任意</span>ご要望等</p>
-    <%= f.text_area :request, class:"Form-Item-Textarea", placeholder:"不明点やご要望がございましたら記入ください。" %>
-  </div>
-  <%= f.submit "送信する" ,class:"Form-Btn" %>
-</div>
-<% end %>
+<section class="lp-sec-big lp-sec-big--center">
+        <div class="lp-block">
+            <h2 class="lp-title">壁紙が違うだけで世界が変わります</h2>
+            <p class="lp-text">あなたの家の壁紙をどこよりも安く修繕・リフォームしてみませんか？</p>
+            <div class="lp-button">
+                <%= link_to '簡単3分見積もりはこちら', "#", class: "lp-c-button lp-c-button--large" %>
+                <%= link_to '訪問見積もり予約はこちら', new_address_path, class: "lp-c-button lp-c-button--large" %>
+            </div>
+        </div>
+    </section>
+
+    <div class="lp-sec-band">
+        <div class="lp-block">
+            <h2 class="lp-title">詳細はこちら</h2>
+            <p class="lp-text">↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓</p>
+        </div>
+    </div>
+
+
+           
+
+    <section class="lp-sec-fullimage lp-sec-fullimage--center">
+        <div class="lp-block">
+            <div class="lp-item">
+                <figure class="lp-item__img">
+                    <img src="./img/image.png" alt="イメージ">
+                </figure>
+                <div class="lp-item__contents">
+                    <h2 class="lp-title">FullImageCenter</h2>
+                    <p class="lp-text">画像を中央に配置して、テキストを下に配置するブロックです。画像はいっぱいに表示します。</p>
+                    <div class="lp-button">
+                        <a href="#" class="lp-c-button lp-c-button--large">〇〇〇はこちら</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="lp-c-line">
+    
+    
+
+    
+    <hr class="lp-c-line">
+
+    <section class="lp-sec-list">
+        <div class="lp-block">
+            <h2 class="lp-title">約束いたします</h2>
+            <p class="lp-text">私に任せて貰えば以下の要件を約束します。</p>
+            <ul class="lp-list">
+                <li class="lp-item">納期までに必ず仕上げます。</li>
+                <li class="lp-item">どこよりもリーズナブルな値段設定です。</li>
+                <li class="lp-item">お部屋の養生もきちんと行います。</li>
+                <li class="lp-item">満足いかない箇所は無料修繕いたします。</li>
+                <li class="lp-item">新しい空間を提供いたします。</li>
+            </ul>
+        </div>
+</section>
