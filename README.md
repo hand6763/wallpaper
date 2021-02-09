@@ -91,7 +91,6 @@ Twitter,Instagramへのリンク機能は現代の流行を考えると実装し
 
 | Column     | Type    | Options     |
 | --------   | ------  | ----------- |
-| room       | string  | null: false |
 | wide       | string  | null: false |
 | height     | string  | null: false |
 | ceiling_id | integer | null: false |

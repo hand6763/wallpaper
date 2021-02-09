@@ -1,0 +1,19 @@
+  <div class="Form">
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>部屋の広さ</p>
+      <%= f.text_field :wide, class:"Form-Item-Input", placeholder:"例）６" %>畳
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>天井までの高さ</p>
+      <%= f.text_field :height, class:"Form-Item-Input", placeholder:"例）５" %>m
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>天井を含むか</p>
+      <%= f.collection_select(:ceilling_id, Ceilling.all, :id, :name, {}, {class:"Form-Item-Input"}) %>
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>壁紙のグレード</p>
+      <%= f.collection_select(:grade_id, Grade.all, :id, :name, {}, {class:"Form-Item-Input"}) %>
+    </div>
+    <%= f.submit "送信する" ,class:"Form-Btn" %>
+  </div>
