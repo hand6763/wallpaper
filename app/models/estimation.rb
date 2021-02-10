@@ -9,5 +9,8 @@ class Estimation < ApplicationRecord
 
   validates :ceilling_id, :grade_id, numericality: { other_than: 1, message: "を選択してください" }
 
+
+
+
     
 end

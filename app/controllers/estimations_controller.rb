@@ -4,7 +4,16 @@ class EstimationsController < ApplicationController
   end
 
   def create
-    @estimation = Estimation.ceate(estimation_params)
+    @estimation = Estimation.new(estimation_params)
+    if @estimation.save
+      redirect_to @estimation
+    else
+      render :new
+    end
+  end
+
+  def show
+    @estimation = Estimation.find(params[:id])
   end
 
   private

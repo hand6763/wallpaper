@@ -8,7 +8,12 @@ class AddressesController < ApplicationController
   end
 
   def create
-    @address = Address.create(address_params)
+    @address = Address.new(address_params)
+    if @address.save
+      render :create
+    else
+      render :new
+    end
   end
 
   private
