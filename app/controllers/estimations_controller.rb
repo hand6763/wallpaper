@@ -14,6 +14,8 @@ class EstimationsController < ApplicationController
 
   def show
     @estimation = Estimation.find(params[:id])
+    @area_price = @estimation.area_price
+    @sum_price = @estimation.sum_price
   end
 
   private
