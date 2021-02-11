@@ -19,6 +19,6 @@ class EstimationsController < ApplicationController
   private
 
   def estimation_params
-    params.require(:estimation).permit(:wide, :height, :ceilling_id, :grade_id)
+    params.require(:estimation).permit(:wide_id, :ceilling_id, :grade_id)
   end
 end

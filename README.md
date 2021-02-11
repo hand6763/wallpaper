@@ -1,27 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 # アプリケーション
 
@@ -91,8 +69,7 @@ Twitter,Instagramへのリンク機能は現代の流行を考えると実装し
 
 | Column     | Type    | Options     |
 | --------   | ------  | ----------- |
-| wide       | string  | null: false |
-| height     | string  | null: false |
+| wide_id    | integer | null: false |
 | ceiling_id | integer | null: false |
 | grade_id   | integer | null: false |
 

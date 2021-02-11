@@ -27,8 +27,7 @@ ActiveRecord::Schema.define(version: 2021_02_05_070032) do
   end
 
   create_table "estimations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "wide"
-    t.string "height"
+    t.integer "wide_id"
     t.integer "ceilling_id"
     t.integer "grade_id"
     t.datetime "created_at", precision: 6, null: false
