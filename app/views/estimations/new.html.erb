@@ -3,6 +3,7 @@
 <%= render 'shared/error_messages', model: f.object %>
 
   <div class="Form">
+    <h1 class="Form-Title">簡単10秒見積もり </h1>
     <div class="Form-Item">
       <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>部屋の広さ</p>
       <%= f.collection_select(:wide_id, Wide.all, :id, :name, {}, {class:"Form-Item-Input"}) %>
