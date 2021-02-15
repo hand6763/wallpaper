@@ -72,6 +72,15 @@
   height: 500px;
 }
 
+.lp-title-2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+	line-height:0.95em;
+	color: #FFF;
+	text-shadow: 0 0 0.2em rgba(0,0,0,1);
+}
+
 .lp-list{
   text-align: left;
   font-size: 20px;
